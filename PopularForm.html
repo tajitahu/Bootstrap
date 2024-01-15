@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="PopularForm.css">
+    <title>Document</title>
+</head>
+<body>
+    <canvas style="height: 150px; width: 75%;">
+    <h2>Take 1 Minute: IMPROVE YOUR MOTOR SKILLS</h2>
+    <div class="links">
+        <a href="https://dev.to/uuuuuulala/coding-an-interactive-and-damn-satisfying-cursor-7-simple-steps-2kb-of-code-1c8b" target="_blank">tutorial<img class="icon" src="https://ksenia-k.com/img/icons/link.svg"></a>
+    </div>
+    </canvas>
+
+    <section class="user">
+        <div class="user_options-container">
+          <div class="user_options-text">
+            <div class="user_options-unregistered">
+              <h2 class="user_unregistered-title">Don't have an account?</h2>
+              <p class="user_unregistered-text">Banjo tote bag bicycle rights, High Life sartorial cray craft beer whatever street art fap.</p>
+              <button class="user_unregistered-signup" id="signup-button">Sign up</button>
+            </div>
+      
+            <div class="user_options-registered">
+              <h2 class="user_registered-title">Have an account?</h2>
+              <p class="user_registered-text">Banjo tote bag bicycle rights, High Life sartorial cray craft beer whatever street art fap.</p>
+              <button class="user_registered-login" id="login-button">Login</button>
+              <button class="user_registered-login" id="login-button" style="display:flex; float: right"><a href="https://tawk.to/chat/6570c122ff45ca7d47878598/default" alt="Sorry we currently have technical issues; Please try again after 24hrs; Thank You1"    onclick="customerly.open()">Live Chat</a></button>
+                <!--Start of Tawk.to Script-->
+
+              
+            </div>
+          </div>
+          
+          <div class="user_options-forms" id="user_options-forms">
+            <div class="user_forms-login">
+              <h2 class="forms_title">Login</h2>
+              <form class="forms_form">
+                <fieldset class="forms_fieldset">
+                  <div class="forms_field">
+                    <input type="email" placeholder="Email" class="forms_field-input" required autofocus />
+                  </div>
+                  <div class="forms_field">
+                    <input type="password" placeholder="Password" class="forms_field-input" required />
+                  </div>
+                </fieldset>
+                <div class="forms_buttons">
+                  <button type="button" class="forms_buttons-forgot">Forgot password?</button>
+                  <input type="submit" value="Log In" class="forms_buttons-action">
+                </div>
+              </form>
+            </div>
+            <div class="user_forms-signup">
+              <h2 class="forms_title">Sign Up</h2>
+              <form class="forms_form">
+                <fieldset class="forms_fieldset">
+                  <div class="forms_field">
+                    <input type="text" placeholder="Full Name" class="forms_field-input" required />
+                  </div>
+                  <div class="forms_field">
+                    <input type="email" placeholder="Email" class="forms_field-input" required />
+                  </div>
+                  <div class="forms_field">
+                    <input type="password" placeholder="Password" class="forms_field-input" required />
+                  </div>
+                </fieldset>
+                <div class="forms_buttons">
+                  <input type="submit" value="Sign up" class="forms_buttons-action">
+                </div>
+                <div class="back2DynamicForm">
+                    <a href="dynamicForm.html">click me<img src="formIconImg.jpeg" alt="Form Icon Image"></a>
+                </div>
+              </form>
+            </div>
+          </div>
+          
+        </div>
+    </section>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="PopularForm.js"></script>
+
+<script>
+    $(document).ready(function(){
+       
+        /**
+        * Add event listener to the "Sign Up" button
+        */
+        $('#signup-button').on('click', function() {
+            $('#user_options-forms').removeClass('bounceRight')
+            $('#user_options-forms').addClass('bounceLeft')
+        })
+        
+        /**
+        * Add event listener to the "Login" button
+        */
+        $('#login-button').on('click', function(){
+            $('#user_options-forms').removeClass('bounceLeft')
+            $('#user_options-forms').addClass('bounceRight')
+        })
+        
+    });
+</script>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/6570c19fff45ca7d478785ec/1hh078mhs';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+</html>

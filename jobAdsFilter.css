@@ -1,0 +1,96 @@
+ /*Background Image  */
+ body {
+    margin: 0;
+    padding: 15px;
+    font-family: 'Lora', serif;
+    font-family: 'Raleway', sans-serif;
+    background-color: #002244;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ /* Div Which is in Centre  */
+.base{
+    padding-top: 3px;
+    background-color:#0c345c;
+    height: 700px;
+    width:400px ;
+    padding-left: 30px;
+    color: aliceblue;
+    border-radius: 30px;
+    box-shadow: 22px 22px 2px #010a14;
+    
+}
+
+/* CheckBox */
+.allcheckbox input[type="checkbox"]{
+display: none;
+}
+.allcheckbox label{
+position: relative;
+color: aliceblue;
+border: 2px solid #2c6ba1;
+padding: 5px 10px;
+display: flex;
+align-items: center;
+margin-right: 50px;
+}
+.allcheckbox label:before{
+
+    content: "";
+    height: 20px;
+    width: 20px;
+    border: 2px solid #2c6ba1;
+    border-radius: 50%;
+    margin-right: 60px;
+
+}
+input[type="checkbox"]{
+    width:20px;
+    height: 20px;
+    border-radius: circle;
+
+}
+.allcheckbox input[type="checkbox"]:checked + label{
+background-color:#002244;
+color:white;
+}
+.allcheckbox input[type="checkbox"]:checked + label:before{
+height: 10px;
+width: 10px;
+border: 10px solid #5a95c8;
+background-color: #1a0e74;
+}
+
+/* Button */
+.button{
+    background-color:goldenrod;
+    color: #fff;
+    height: 50px;
+    width: 170px;
+/*     text-align: center; */
+     margin-left:94px;
+    background-position: center;
+    transition:height ;
+    transition: width ;
+    font-weight: 100;
+}
+.button:hover{
+height: 60px;
+width:180px;
+border: 5px solid #13274F;
+}
+
+/* Search Box */
+.int1:hover{
+    border: 5px solid #002244;
+    background-color:#1F305E;
+}
+.int1{
+    background-color:#002D62;
+    height:30px;
+    width: 200px;
+    font-size: large;
+    color: #fff;
+}

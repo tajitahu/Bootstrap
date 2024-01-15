@@ -1,0 +1,1440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+        /*body{
+            background-color: rgb(33, 32, 32);
+            /*Alsternative for Dark Mode
+        }
+
+        .card m-3{
+            margin-top: 100%;
+        }
+        .card-body img{
+            height: 350px;
+            width: 100%;
+            border-radius: 5px 5px 5px 5px;
+            }
+
+            .carousel-inner img{
+                height: 500px;
+            }
+        /*nav {
+            position: fixed;
+            bottom: 100px;
+            width: 100%;
+            display: block;
+            float:inline-end;
+            }
+            .darkBg a{
+                float: right;
+            }
+            .forgotPass{
+                font-size: x-small;
+                color: black;
+            }
+            .register{
+                font-family: 'Times New Roman', Times, serif;
+                font-size: x-small;
+                color: rgb(177, 140, 140);
+            }
+            a{
+                cursor: pointer;
+            }
+            .select_Sector{
+                border-radius: 5px 5px 5px 5px;
+                border-color: black;
+                box-shadow: 2px 2px 5px grey;      
+            }
+            .carousel-Border{
+                height: 500px;
+                background-size: 125px;
+            }*/
+
+          /*  video{
+                "object-fit": (
+  responsive: true,
+  property: object-fit,
+  values: (
+    contain: contain,
+    cover: cover,
+    fill: fill,
+    scale: scale-down,
+    none: none,
+  )
+),
+            }*/
+
+    </style>
+</head>
+
+<body class="" style="border: 5px; background-color: white;">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">** Job Center</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  JOB Sectors
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Engineering</a></li>
+                  <li><a class="dropdown-item" href="#">Public Service</a></li>
+                  <li><a class="dropdown-item" href="#">Business, admin & Marketing</a></li>
+                  <li><a class="dropdown-item" href="#">Health & Social Care</a></li>
+                  <li><a class="dropdown-item" href="#">Sports & Leisure</a></li>
+                  <li><a class="dropdown-item" href="#">Hygiene & Fashon</a></li>
+                  <li><a class="dropdown-item" href="#">Food Catering Industry</a></li>
+                  <li><a class="dropdown-item" href="#">Transport</a></li>
+                  <li><a class="dropdown-item" href="#">IT services</a></li>
+                  <li><a class="dropdown-item" href="#">Farming & Animal Husbandry</a></li>
+                  <li><a class="dropdown-item" href="#">Travel & Aviation</a></li>
+                  <li><a class="dropdown-item" href="#">Other Non-skilled Labourer</a></li>
+                  <li><a class="dropdown-item" href="#">Hotels Services</a></li>
+                  <li><a class="dropdown-item" href="#">International Relations</a></li>
+                  <li><a class="dropdown-item" href="#">Community & NGOs</a></li>
+                  <li><a class="dropdown-item" href="#">Security & Armed Forces</a></li>
+                  <li><a class="dropdown-item" href="#">Other Specific Skilled Areas</a></li>
+                  <li><a class="dropdown-item" href="#">Events</a></li>
+                  <li><a class="dropdown-item" href="#">Insurance</a></li>
+                  <li><a class="dropdown-item" href="#">Energy & Environmental Services</a></li>
+                  <li><a class="dropdown-item" href="#">Other</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Our Services
+                </a>
+                <ul class="dropdown-menu">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                         Employer
+                        </a>
+                        <li><a class="dropdown-item" href="#">Admin & Consultancy</a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Applicant
+                        </a>
+                        <li><a class="dropdown-item" href="#">Support & Recruitment</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Job Skill Trainings & Entry Exams (concours)
+                       </a>
+                       <li><a class="dropdown-item" href="#">Diversity Inclusion (Certified in Disability Awareness)</a>
+                </ul>
+
+               
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Client Support Services
+                </a>
+                <ul class="dropdown-menu">
+
+                  <li><a class="dropdown-item" href="#">Employer</a>
+                    <ul class="dropdown-menu">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Client Support Services
+                        </a>
+                    </ul>
+                 </li>
+                  <li><a class="dropdown-item" href="#">Applicant</a></li>
+                  <li><a class="dropdown-item" href="#">Upskill Training & Councours</a></li>
+                </ul>
+              </li>
+            </ul>
+            <li class="darkBg">Dark Mode</li>
+          </div>
+        </div>
+      </nav>
+
+    <main class="w-100 m-auto" style="max-width: 600px;">
+        <div class="styleCard" style="background-color: rgb(242, 242, 232); border-radius: 5px 5px 5px 5px; width: 80%;">  
+        <div class="card m-3">
+            <div class="card-body"> 
+                <img src="loginGirl.jpeg" alt="login form" class="loginGirl" style="width:100%;"><br><br>
+                <form id="frmLogin" action="/test" method="get" autocomplete="off">
+                    <div class="m-1">
+                        <label class="form-label">Email</label>
+                        <input name="email" type="text" class="form-control form-control-lg" placeholder="enter the email address" required>
+                    </div>
+                  
+                    <div class="m-1">
+                        <label class="form-label">Password</label>
+                        <input name="pwd" type="password" class="form-control form-control-lg" placeholder="enter the password">
+                    </div>
+                    <div class="m-1">
+
+                        <p class="forgotPass">Forgotten Password? change <a href="#">here</a></p>
+                        <p class="register">Don't have an account?</p>
+                        <button type="Register" class="btn btn-outline-primary float-start" style="background-color: green; color: white;">Register</button>
+                        <button type="submit" class="btn btn-outline-primary float-end">Login</button>
+                        <button type="reset" class="btn btn-outline-primary float-end">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </main>
+</div>
+<section class="carousel-Border" style="background-color: rgb(164, 199, 156); margin: 100px;">
+    <div id="carouselExample" class="carousel slide" style="margin-top: 180px;">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Job_caroussel1.jpeg" class="d-block w-100" alt="Carousel1">
+          </div>
+          <div class="carousel-item">
+            <img src="Job_carousel2.jpeg" class="d-block w-100" alt="Carousel2">
+          </div>
+          <div class="carousel-item">
+            <img src="Job_carousel3.png" class="d-block w-100" alt="Carousel3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+<br><br>
+
+<section class="select_Sector" style="background-color: white; text-align:center;" >
+    <br>
+    <div class="cvAssessor">Try Our CV-Assessors / MATCH YOUR JOB NEEDS</div>
+    <br><br>
+    <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btncheck1">Choose Your Prefered Travel Distance</label>
+
+        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+        <label class="btn btn-outline-success" for="btncheck2">Your Salary Expectation</label>
+      
+        <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btncheck3">Job Type & Preference</label>
+
+        <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+        <label class="btn btn-outline-success" for="btncheck4">Your Level of Competence</label>
+
+        <input type="checkbox" class="btn-check" id="btncheck5" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btncheck5">Are You prepared to Relocate?</label>
+
+        <input type="checkbox" class="btn-check" id="btncheck6" autocomplete="off">
+        <label class="btn btn-outline-success" for="btncheck6">Any Adjustment Needed?</label>
+      
+        <input type="checkbox" class="btn-check" id="btncheck7" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btncheck7">Your Job Sectors</label>
+
+        <input type="checkbox" class="btn-check" id="btncheck8" autocomplete="off">
+        <label class="btn btn-outline-success" for="btncheck8">Your Prefered Schedules</label>
+    </div>
+</section>
+
+<section id="tick-Boxes" style="display: flex; justify-content:first baseline; margin-left: 510px;">
+<div class="FC1">
+    <div class="form-check1" style="margin: 15px;">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+        <label class="form-check-label" for="flexCheckDefault1">
+          Within 10 mile
+        </label>
+    </div>
+    <div class="form-check1" style="margin: 15px;">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked1" checked>
+        <label class="form-check-label" for="flexCheckChecked1">
+          Beyond 10 miles
+        </label>
+    </div>
+    <div class="form-check1" style="margin: 15px;">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2" checked>
+        <label class="form-check-label" for="flexCheckChecked2">
+          Willing t Relocate
+        </label>
+    </div>
+</div>  
+
+<div class="FC2" style="padding-left: 55px;">
+    <div class="form-check2" style="margin: 15px;">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+        <label class="form-check-label" for="flexCheckDefault2">
+          50K-120K XAF
+        </label>
+    </div>
+    <div class="form-check2" style="margin: 15px;">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked3" checked>
+        <label class="form-check-label" for="flexCheckChecked3">
+          121K-200K XAF
+        </label>
+    </div>
+    <div class="form-check2" style="margin: 15px;">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked4" checked>
+        <label class="form-check-label" for="flexCheckChecked4">
+          201K-XM XAF
+        </label>
+    </div>
+</div> 
+
+<div class="FC3" style="padding-left: 25px;">
+    <div class="form-check2" style="margin: 15px;">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+        <label class="form-check-label" for="flexCheckDefault3">
+          Public Sector
+        </label>
+    </div>
+    <div class="form-check2" style="margin: 15px;">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked5" checked>
+        <label class="form-check-label" for="flexCheckChecked5">
+          Private Sector
+        </label>
+    </div>
+    <div class="form-check2" style="margin: 15px;">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked6" checked>
+        <label class="form-check-label" for="flexCheckChecked6">
+          Other
+        </label>
+    </div>
+</div>
+
+<div class="FC4" style="padding-left: 35px;">
+    <div class="form-check2" style="margin: 15px;">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
+        <label class="form-check-label" for="flexCheckDefault4">
+          Highly Expreienced
+        </label>
+    </div>
+    <div class="form-check2" style="margin: 15px;">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked7" checked>
+        <label class="form-check-label" for="flexCheckChecked7">
+          Experienced
+        </label>
+    </div>
+    <div class="form-check2" style="margin: 15px;">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked8" checked>
+        <label class="form-check-label" for="flexCheckChecked8">
+          Unskilled
+        </label>
+    </div>
+</div>
+
+<div class="FC5" style="padding-left: 70px;">
+    <div class="form-check2" style="margin: 15px;">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault5">
+        <label class="form-check-label" for="flexCheckDefault5">
+          Yes
+        </label>
+    </div>
+    <div class="form-check2" style="margin: 15px;">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked9" checked>
+        <label class="form-check-label" for="flexCheckChecked9">
+          No
+        </label>
+    </div>
+    <div class="form-check2" style="margin: 15px;">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked10" checked>
+        <label class="form-check-label" for="flexCheckChecked10">
+          Maybe
+        </label>
+    </div>
+</div>
+
+<div class="FC6" style="padding-left: 75px;">
+    <div class="form-check2" style="margin: 15px;">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault6">
+        <label class="form-check-label" for="flexCheckDefault6">
+          I need Part-time
+        </label>
+    </div>
+    <div class="form-check2" style="margin: 15px;">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked11" checked>
+        <label class="form-check-label" for="flexCheckChecked11">
+          I have a Disability
+        </label>
+    </div>
+    <div class="form-check2" style="margin: 15px;">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked12" checked>
+        <label class="form-check-label" for="flexCheckChecked12">
+          Other
+        </label>
+    </div>
+</div>
+
+<div class="FC7" style="padding-left: 45px;">
+    <div class="dropdown" style="margin: 15px;">
+      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          JOB Sectors
+        </a>
+          <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Engineering</a></li>
+              <li><a class="dropdown-item" href="#">Public Service</a></li>
+              <li><a class="dropdown-item" href="#">Business, admin & Marketing</a></li>
+              <li><a class="dropdown-item" href="#">Health & Social Care</a></li>
+              <li><a class="dropdown-item" href="#">Sports & Leisure</a></li>
+              <li><a class="dropdown-item" href="#">Hygiene & Fashon</a></li>
+              <li><a class="dropdown-item" href="#">Food Catering Industry</a></li>
+              <li><a class="dropdown-item" href="#">Transport</a></li>
+              <li><a class="dropdown-item" href="#">IT services</a></li>
+          <li><a class="dropdown-item" href="#">Farming & Animal Husbandry</a></li>
+          <li><a class="dropdown-item" href="#">Travel & Aviation</a></li>
+          <li><a class="dropdown-item" href="#">Other Non-skilled Labourer</a></li>
+          <li><a class="dropdown-item" href="#">Hotels Services</a></li>
+          <li><a class="dropdown-item" href="#">International Relations</a></li>
+          <li><a class="dropdown-item" href="#">Community & NGOs</a></li>
+          <li><a class="dropdown-item" href="#">Security & Armed Forces</a></li>
+          <li><a class="dropdown-item" href="#">Other Specific Skilled Areas</a></li>
+          <li><a class="dropdown-item" href="#">Events</a></li>
+          <li><a class="dropdown-item" href="#">Insurance</a></li>
+          <li><a class="dropdown-item" href="#">Energy & Environmental Services</a></li>
+          <li><a class="dropdown-item" href="#">Other</a></li>
+        </ul>
+    </div>   
+</div>
+
+<div class="FC8" style="padding-left: 25px;" >
+    <div class="form-check2" style="margin: 15px;">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault7">
+        <label class="form-check-label" for="flexCheckDefault7">
+          Daytime
+        </label>
+    </div>
+    <div class="form-check2" style="margin: 15px;">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked13" checked>
+        <label class="form-check-label" for="flexCheckChecked13">
+          Nights 
+        </label>
+    </div>
+    <div class="form-check2" style="margin: 15px;">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked14" checked>
+        <label class="form-check-label" for="flexCheckChecked14">
+          Weekends & Flexible
+        </label>
+    </div>
+</div> 
+</section>
+
+<section class="m-3">
+      <form action="/uploadDoc.img">
+          <input type="file" id="myFile" name="filename">
+      </form>
+  <textarea class="form-control" placeholder="Please Enter Message Here..." rows="5" style="align-content: center; display: block;"></textarea>
+  <button type="Apply" class="btn btn-primary">Submit</button>
+</section>
+
+<section class="m-6" style="text-align: center;">
+    <br><br>
+    <div class="currentVacs">CURRENT VACANCIES</div>
+    <br><br>
+<table class="table">
+    <thead>
+      <tr>
+        
+        <th scope="col">Current Jobs
+            <tbody>
+                <tr>
+                  <th scope="row">1 (no. of vacs)</th>
+                  <td>Public Sector</td>
+                  <td>Dates from... to...</td>
+                  <td>Details</td>
+                  <td>Pay/Wage</td>
+                  <td>
+                    <button type="button" class="btn btn-secondary">Request Info</button>
+                    <button type="button" class="btn btn-success">Save</button>
+                    <button type="button" class="btn btn-warning">Report</button>
+                    <button type="button" class="btn btn-primary">Apply</button>
+                </td>
+                </tr>
+                <tr>
+                  <th scope="row">2(no. of vacs)</th>
+                  <td>Private Sector</td>
+                  <td>Dates from... to...</td>
+                  <td>Details</td>
+                  <td>Pay/Wage</td>
+                  <td>
+                    <button type="button" class="btn btn-secondary">Request Info</button>
+                    <button type="button" class="btn btn-success">Save</button>
+                    <button type="button" class="btn btn-warning">Report</button>
+                    <button type="button" class="btn btn-primary">Apply</button>
+                </td>
+                </tr>
+                <tr>
+                  <th scope="row">3(no. of vacs)</th>
+                  <td>Community & NGO</td>
+                  
+                  <td>Dates from... to...</td>
+                  <td>Details</td>
+                  <td>Pay/Wage</td>
+                  <td>
+                    <button type="button" class="btn btn-secondary">Request Info</button>
+                    <button type="button" class="btn btn-success">Save</button>
+                    <button type="button" class="btn btn-warning">Report</button>
+                    <button type="button" class="btn btn-primary">Apply</button>
+                </td>
+                </tr> 
+              </tbody>
+        </th>
+
+        <th scope="col">Current Concours
+            <tbody>
+                <tr>
+                  <th scope="row">1(no. of vacs)</th>
+                  <td>Public Sector</td>
+                  <td>Dates from... to...</td>
+                  <td>Details</td>
+                  <td>Entry Fee</td>
+                  <td>
+                    <button type="button" class="btn btn-secondary">Request Info</button>
+                    <button type="button" class="btn btn-success">Save</button>
+                    <button type="button" class="btn btn-warning">Report</button>
+                    <button type="button" class="btn btn-primary">Apply</button>
+                </td>
+                </tr>
+                <tr>
+                  <th scope="row">2(no. of vacs)</th>
+                  <td>Private Sector</td>
+                  <td>Dates from... to...</td>
+                  <td>Details</td>
+                  <td>Entry Fee</td>
+                  <td>
+                    <button type="button" class="btn btn-secondary">Request Info</button>
+                    <button type="button" class="btn btn-success">Save</button>
+                    <button type="button" class="btn btn-warning">Report</button>
+                    <button type="button" class="btn btn-primary">Apply</button>
+                </td>
+                </tr>
+                <tr>
+                  <th scope="row">3(no. of vacs)</th>
+                  <td>Community & NGO</td>
+                  <td>Dates from... to...</td>
+                  <td>Details</td>
+                  <td>Entry Fee</td>
+                  <td>
+                    <button type="button" class="btn btn-secondary">Request Info</button>
+                    <button type="button" class="btn btn-success">Save</button>
+                    <button type="button" class="btn btn-warning">Report</button>
+                    <button type="button" class="btn btn-primary">Apply</button>
+                </td>
+                </tr>
+              </tbody>
+        </th>
+        <th scope="col">Current Professional Training/Courses
+            <tbody>
+                <tr>
+                  <th scope="row">1(no. of Courses)</th>
+                  <td>Public Sector</td>
+                  <td>Dates from... to...</td>
+                  <td>Details</td>
+                  <td>Cost</td>
+                  <td>
+                    <button type="button" class="btn btn-secondary">Request Info</button>
+                    <button type="button" class="btn btn-success">Save</button>
+                    <button type="button" class="btn btn-warning">Report</button>
+                    <button type="button" class="btn btn-primary">Apply</button>
+                </td>
+                </tr>
+                <tr>
+                  <th scope="row">2(no. of Courses)</th>
+                  <td>Private Sector</td>
+                  <td>Dates from... to...</td>
+                  <td>Details</td>
+                  <td>Cost</td>
+                  <td>
+                    <button type="button" class="btn btn-secondary">Request Info</button>
+                    <button type="button" class="btn btn-success">Save</button>
+                    <button type="button" class="btn btn-warning">Report</button>
+                    <button type="button" class="btn btn-primary">Apply</button>
+                </td>
+                </tr>
+                <tr>
+                  <th scope="row">3(no. of Courses )</th>
+                  <td>Community & NGO</td>
+                  <td>Dates from... to...</td>
+                  <td>Details</td>
+                  <td>Cost</td>
+                  <td>
+                    <button type="button" class="btn btn-secondary">Request Info</button>
+                    <button type="button" class="btn btn-success">Save</button>
+                    <button type="button" class="btn btn-warning">Report</button>
+                    <button type="button" class="btn btn-primary">Apply</button>
+                </td>
+                </tr>
+              </tbody>
+        </th>
+        </th>
+      </tr>
+     
+    </thead>
+   
+  </table>
+</section>
+
+<section class="m-3" style="align-self: center;">
+        <br><br>
+    <div class="dropdown" style="margin: 15px;">
+        <div class="h2Apt">BOOK APPOINTMENT</div>
+        <br><br>
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Select a Service
+          </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Consultancy (Recruiters Only)</a></li>
+                <li>
+                    <a class="dropdown-item" href="#">Course/Training Entry</a>
+                </li>
+                <li><a class="dropdown-item" href="#">CV Design & Cover Letters</a></li>
+                <li><a class="dropdown-item" href="#">Disability Assessment & Support</a></li>
+                <li><a class="dropdown-item" href="#">Job Starter Emergency Loan</a></li>
+                <li><a class="dropdown-item" href="#">Recruitment Advice (invite us)</a></li>
+                <li><a class="dropdown-item" href="#">Job Fair (check online schedules)</a></li>
+                <li><a class="dropdown-item" href="#">Entrepreneurship</a></li>
+                <li><a class="dropdown-item" href="#">Careers Advice</a></li>
+                <li><a class="dropdown-item" href="#">Other</a></li>
+          </ul>
+          <ul>
+            <div class="col-md-6">
+                <input type="date" class="form-control" placeholder="Enter Date">
+            </div>
+            <div class="col-md-6">
+                <input type="time" class="form-control" placeholder="Enter Email">
+            </div>
+          </ul>
+      </div>  
+    
+<form class="needs-validation" novalidate>
+    <div class="form-row">
+      <div class="col-md-4 mb-3">
+        <label for="validationCustom01">First name</label>
+        <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <label for="validationCustom02">Last name</label>
+        <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <label for="validationCustomUsername">Phone Number</label>
+       
+        <div class="col-md-6">
+            <input type="tel" class="form-control" placeholder="Phone Number">
+        </div>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+          </div>
+          <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username (optional)" aria-describedby="inputGroupPrepend">
+          <div class="invalid-feedback">
+            Please choose a username.
+          </div>
+          <div class="col-md-6">
+            <input type="email" class="form-control" placeholder="Enter Email">
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-md-6 mb-3">
+        <label for="validationCustom03">City</label>
+        <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+        <div class="invalid-feedback">
+          Please provide a valid city.
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <label for="validationCustom04">State</label>
+        <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+        <div class="invalid-feedback">
+          Please provide a valid state.
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <label for="validationCustom05">full address & Zip</label>
+        <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+        <div class="invalid-feedback">
+          Provide zip & full detailed address.
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Please Send Brief Description</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+
+    <div class="form-group">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+        <label class="form-check-label" for="invalidCheck">
+          Agree to terms and conditions
+        </label>
+        <div class="invalid-feedback">
+          You must agree before submitting.
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </form>
+  
+  <script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function() {
+    'use strict';
+    window.addEventListener('load', function() {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('needs-validation');
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function(event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
+  </script>
+</section>
+
+<section class="jobPosts">
+<div id="jobs">    
+<div class="container mt-5">
+    <div class="d-flex justify-content-between">
+        <h4>Recommended Public, Private & NGO Jobs</h4> <button class="btn btn-sm btn-outline-dark">Apply all</button>
+    </div>
+    <div class="row mt-2 g-1">
+        <div class="col-md-3">
+            <div class="card p-2">
+                <div class="text-right"> <small>Full Time</small> </div>
+                <div class="text-center mt-2 p-3"> <img src="https://img.icons8.com/color/96/000000/google-logo.png" width="60" /> <span class="d-block font-weight-bold">UX Designer</span>
+                    <hr> <span>Google Inc</span>
+                    <div class="d-flex flex-row align-items-center justify-content-center"> <i class="fa fa-map-marker"></i> <small class="ml-1">FA 100, OH, USA</small> </div>
+                    <div class="d-flex justify-content-between mt-3"> <span>Salary: $34,000</span> <button class="btn btn-sm btn-outline-dark">Apply Now</button> </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card p-2">
+                <div class="text-right"> <small>Full Time</small> </div>
+                <div class="text-center mt-2 p-3"> <img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" width="60" /> <span class="d-block font-weight-bold">UX Designer</span>
+                    <hr> <span>Instagram Inc</span>
+                    <div class="d-flex flex-row align-items-center justify-content-center"> <i class="fa fa-map-marker"></i> <small class="ml-1">FA 104, OH, USA</small> </div>
+                    <div class="d-flex justify-content-between mt-3"> <span>Salary: $38,000</span> <button class="btn btn-sm btn-outline-dark">Apply Now</button> </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card p-2">
+                <div class="text-right"> <small>Full Time</small> </div>
+                <div class="text-center mt-2 p-3"> <img src="https://img.icons8.com/officel/80/000000/dribbble.png" width="60" /> <span class="d-block font-weight-bold">UX Designer</span>
+                    <hr> <span>Dribbble Inc</span>
+                    <div class="d-flex flex-row align-items-center justify-content-center"> <i class="fa fa-map-marker"></i> <small class="ml-1">FA 280, OH, USA</small> </div>
+                    <div class="d-flex justify-content-between mt-3"> <span>Salary: $24,000</span> <button class="btn btn-sm btn-outline-dark">Apply Now</button> </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card p-2">
+                <div class="text-right"> <small>Full Time</small> </div>
+                <div class="text-center mt-2 p-3"> <img src="https://img.icons8.com/color/96/000000/behance.png" width="60" /> <span class="d-block font-weight-bold">UX Designer</span>
+                    <hr> <span>Behance Inc</span>
+                    <div class="d-flex flex-row align-items-center justify-content-center"> <i class="fa fa-map-marker"></i> <small class="ml-1">FA 130, OH, USA</small> </div>
+                    <div class="d-flex justify-content-between mt-3"> <span>Salary: $30,000</span> <button class="btn btn-sm btn-outline-dark">Apply Now</button> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="d-flex justify-content-between">
+        <h4>Recommended Jobs</h4> <button class="btn btn-sm btn-outline-dark">Apply all</button>
+    </div>
+    <div class="row mt-2 g-1">
+        <div class="col-md-3">
+            <div class="card p-2">
+                <div class="text-right"> <small>Full Time</small> </div>
+                <div class="text-center mt-2 p-3"> <img src="https://img.icons8.com/color/96/000000/google-logo.png" width="60" /> <span class="d-block font-weight-bold">UX Designer</span>
+                    <hr> <span>Google Inc</span>
+                    <div class="d-flex flex-row align-items-center justify-content-center"> <i class="fa fa-map-marker"></i> <small class="ml-1">FA 100, OH, USA</small> </div>
+                    <div class="d-flex justify-content-between mt-3"> <span>Salary: $34,000</span> <button class="btn btn-sm btn-outline-dark">Apply Now</button> </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card p-2">
+                <div class="text-right"> <small>Full Time</small> </div>
+                <div class="text-center mt-2 p-3"> <img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" width="60" /> <span class="d-block font-weight-bold">UX Designer</span>
+                    <hr> <span>Instagram Inc</span>
+                    <div class="d-flex flex-row align-items-center justify-content-center"> <i class="fa fa-map-marker"></i> <small class="ml-1">FA 104, OH, USA</small> </div>
+                    <div class="d-flex justify-content-between mt-3"> <span>Salary: $38,000</span> <button class="btn btn-sm btn-outline-dark">Apply Now</button> </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card p-2">
+                <div class="text-right"> <small>Full Time</small> </div>
+                <div class="text-center mt-2 p-3"> <img src="https://img.icons8.com/officel/80/000000/dribbble.png" width="60" /> <span class="d-block font-weight-bold">UX Designer</span>
+                    <hr> <span>Dribbble Inc</span>
+                    <div class="d-flex flex-row align-items-center justify-content-center"> <i class="fa fa-map-marker"></i> <small class="ml-1">FA 280, OH, USA</small> </div>
+                    <div class="d-flex justify-content-between mt-3"> <span>Salary: $24,000</span> <button class="btn btn-sm btn-outline-dark">Apply Now</button> </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card p-2">
+                <div class="text-right"> <small>Full Time</small> </div>
+                <div class="text-center mt-2 p-3"> <img src="https://img.icons8.com/color/96/000000/behance.png" width="60" /> <span class="d-block font-weight-bold">UX Designer</span>
+                    <hr> <span>Behance Inc</span>
+                    <div class="d-flex flex-row align-items-center justify-content-center"> <i class="fa fa-map-marker"></i> <small class="ml-1">FA 130, OH, USA</small> </div>
+                    <div class="d-flex justify-content-between mt-3"> <span>Salary: $30,000</span> <button class="btn btn-sm btn-outline-dark">Apply Now</button> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container mt-5">
+    <div class="d-flex justify-content-between">
+        <h4>Recommended Jobs</h4> <button class="btn btn-sm btn-outline-dark">Apply all</button>
+    </div>
+    <div class="row mt-2 g-1">
+        <div class="col-md-3">
+            <div class="card p-2">
+                <div class="text-right"> <small>Full Time</small> </div>
+                <div class="text-center mt-2 p-3"> <img src="https://img.icons8.com/color/96/000000/google-logo.png" width="60" /> <span class="d-block font-weight-bold">UX Designer</span>
+                    <hr> <span>Google Inc</span>
+                    <div class="d-flex flex-row align-items-center justify-content-center"> <i class="fa fa-map-marker"></i> <small class="ml-1">FA 100, OH, USA</small> </div>
+                    <div class="d-flex justify-content-between mt-3"> <span>Salary: $34,000</span> <button class="btn btn-sm btn-outline-dark">Apply Now</button> </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card p-2">
+                <div class="text-right"> <small>Full Time</small> </div>
+                <div class="text-center mt-2 p-3"> <img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" width="60" /> <span class="d-block font-weight-bold">UX Designer</span>
+                    <hr> <span>Instagram Inc</span>
+                    <div class="d-flex flex-row align-items-center justify-content-center"> <i class="fa fa-map-marker"></i> <small class="ml-1">FA 104, OH, USA</small> </div>
+                    <div class="d-flex justify-content-between mt-3"> <span>Salary: $38,000</span> <button class="btn btn-sm btn-outline-dark">Apply Now</button> </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card p-2">
+                <div class="text-right"> <small>Full Time</small> </div>
+                <div class="text-center mt-2 p-3"> <img src="https://img.icons8.com/officel/80/000000/dribbble.png" width="60" /> <span class="d-block font-weight-bold">UX Designer</span>
+                    <hr> <span>Dribbble Inc</span>
+                    <div class="d-flex flex-row align-items-center justify-content-center"> <i class="fa fa-map-marker"></i> <small class="ml-1">FA 280, OH, USA</small> </div>
+                    <div class="d-flex justify-content-between mt-3"> <span>Salary: $24,000</span> <button class="btn btn-sm btn-outline-dark">Apply Now</button> </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card p-2">
+                <div class="text-right"> <small>Full Time</small> </div>
+                <div class="text-center mt-2 p-3"> <img src="https://img.icons8.com/color/96/000000/behance.png" width="60" /> <span class="d-block font-weight-bold">UX Designer</span>
+                    <hr> <span>Behance Inc</span>
+                    <div class="d-flex flex-row align-items-center justify-content-center"> <i class="fa fa-map-marker"></i> <small class="ml-1">FA 130, OH, USA</small> </div>
+                    <div class="d-flex justify-content-between mt-3"> <span>Salary: $30,000</span> <button class="btn btn-sm btn-outline-dark">Apply Now</button> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="concours">
+<div class="container mt-5">
+    <div class="d-flex justify-content-between">
+        <h4>Recommended Government Entry EXAMS/CONCOURS</h4> <button class="btn btn-sm btn-outline-dark">Apply all</button>
+    </div>
+    <div class="row mt-2 g-1">
+        <div class="col-md-3">
+            <div class="card p-2">
+                <div class="text-right"> <small>Full Time</small> </div>
+                <div class="text-center mt-2 p-3"> <img src="https://img.icons8.com/color/96/000000/google-logo.png" width="60" /> <span class="d-block font-weight-bold">UX Designer</span>
+                    <hr> <span>Google Inc</span>
+                    <div class="d-flex flex-row align-items-center justify-content-center"> <i class="fa fa-map-marker"></i> <small class="ml-1">FA 100, OH, USA</small> </div>
+                    <div class="d-flex justify-content-between mt-3"> <span>Fee: $34,000</span> <button class="btn btn-sm btn-outline-dark">Apply Now</button> </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card p-2">
+                <div class="text-right"> <small>Full Time</small> </div>
+                <div class="text-center mt-2 p-3"> <img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" width="60" /> <span class="d-block font-weight-bold">UX Designer</span>
+                    <hr> <span>Instagram Inc</span>
+                    <div class="d-flex flex-row align-items-center justify-content-center"> <i class="fa fa-map-marker"></i> <small class="ml-1">FA 104, OH, USA</small> </div>
+                    <div class="d-flex justify-content-between mt-3"> <span>Fee: $38,000</span> <button class="btn btn-sm btn-outline-dark">Apply Now</button> </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card p-2">
+                <div class="text-right"> <small>Full Time</small> </div>
+                <div class="text-center mt-2 p-3"> <img src="https://img.icons8.com/officel/80/000000/dribbble.png" width="60" /> <span class="d-block font-weight-bold">UX Designer</span>
+                    <hr> <span>Dribbble Inc</span>
+                    <div class="d-flex flex-row align-items-center justify-content-center"> <i class="fa fa-map-marker"></i> <small class="ml-1">FA 280, OH, USA</small> </div>
+                    <div class="d-flex justify-content-between mt-3"> <span>Fee: $24,000</span> <button class="btn btn-sm btn-outline-dark">Apply Now</button> </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card p-2">
+                <div class="text-right"> <small>Full Time</small> </div>
+                <div class="text-center mt-2 p-3"> <img src="https://img.icons8.com/color/96/000000/behance.png" width="60" /> <span class="d-block font-weight-bold">UX Designer</span>
+                    <hr> <span>Behance Inc</span>
+                    <div class="d-flex flex-row align-items-center justify-content-center"> <i class="fa fa-map-marker"></i> <small class="ml-1">FA 130, OH, USA</small> </div>
+                    <div class="d-flex justify-content-between mt-3"> <span>Fee: $30,000</span> <button class="btn btn-sm btn-outline-dark">Apply Now</button> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="d-flex justify-content-between">
+        <h4>Recommended Concours</h4> <button class="btn btn-sm btn-outline-dark">Apply all</button>
+    </div>
+    <div class="row mt-2 g-1">
+        <div class="col-md-3">
+            <div class="card p-2">
+                <div class="text-right"> <small>Full Time</small> </div>
+                <div class="text-center mt-2 p-3"> <img src="https://img.icons8.com/color/96/000000/google-logo.png" width="60" /> <span class="d-block font-weight-bold">UX Designer</span>
+                    <hr> <span>Google Inc</span>
+                    <div class="d-flex flex-row align-items-center justify-content-center"> <i class="fa fa-map-marker"></i> <small class="ml-1">FA 100, OH, USA</small> </div>
+                    <div class="d-flex justify-content-between mt-3"> <span>Fee: $34,000</span> <button class="btn btn-sm btn-outline-dark">Apply Now</button> </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card p-2">
+                <div class="text-right"> <small>Full Time</small> </div>
+                <div class="text-center mt-2 p-3"> <img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" width="60" /> <span class="d-block font-weight-bold">UX Designer</span>
+                    <hr> <span>Instagram Inc</span>
+                    <div class="d-flex flex-row align-items-center justify-content-center"> <i class="fa fa-map-marker"></i> <small class="ml-1">FA 104, OH, USA</small> </div>
+                    <div class="d-flex justify-content-between mt-3"> <span>Fee: $38,000</span> <button class="btn btn-sm btn-outline-dark">Apply Now</button> </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card p-2">
+                <div class="text-right"> <small>Full Time</small> </div>
+                <div class="text-center mt-2 p-3"> <img src="https://img.icons8.com/officel/80/000000/dribbble.png" width="60" /> <span class="d-block font-weight-bold">UX Designer</span>
+                    <hr> <span>Dribbble Inc</span>
+                    <div class="d-flex flex-row align-items-center justify-content-center"> <i class="fa fa-map-marker"></i> <small class="ml-1">FA 280, OH, USA</small> </div>
+                    <div class="d-flex justify-content-between mt-3"> <span>Fee: $24,000</span> <button class="btn btn-sm btn-outline-dark">Apply Now</button> </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card p-2">
+                <div class="text-right"> <small>Full Time</small> </div>
+                <div class="text-center mt-2 p-3"> <img src="https://img.icons8.com/color/96/000000/behance.png" width="60" /> <span class="d-block font-weight-bold">UX Designer</span>
+                    <hr> <span>Behance Inc</span>
+                    <div class="d-flex flex-row align-items-center justify-content-center"> <i class="fa fa-map-marker"></i> <small class="ml-1">FA 130, OH, USA</small> </div>
+                    <div class="d-flex justify-content-between mt-3"> <span>Fee: $30,000</span> <button class="btn btn-sm btn-outline-dark">Apply Now</button> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container mt-5">
+    <div class="d-flex justify-content-between">
+        <h4>Recommended Concours</h4> <button class="btn btn-sm btn-outline-dark">Apply all</button>
+    </div>
+    <div class="row mt-2 g-1">
+        <div class="col-md-3">
+            <div class="card p-2">
+                <div class="text-right"> <small>Full Time</small> </div>
+                <div class="text-center mt-2 p-3"> <img src="https://img.icons8.com/color/96/000000/google-logo.png" width="60" /> <span class="d-block font-weight-bold">UX Designer</span>
+                    <hr> <span>Google Inc</span>
+                    <div class="d-flex flex-row align-items-center justify-content-center"> <i class="fa fa-map-marker"></i> <small class="ml-1">FA 100, OH, USA</small> </div>
+                    <div class="d-flex justify-content-between mt-3"> <span>Fee: $34,000</span> <button class="btn btn-sm btn-outline-dark">Apply Now</button> </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card p-2">
+                <div class="text-right"> <small>Full Time</small> </div>
+                <div class="text-center mt-2 p-3"> <img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" width="60" /> <span class="d-block font-weight-bold">UX Designer</span>
+                    <hr> <span>Instagram Inc</span>
+                    <div class="d-flex flex-row align-items-center justify-content-center"> <i class="fa fa-map-marker"></i> <small class="ml-1">FA 104, OH, USA</small> </div>
+                    <div class="d-flex justify-content-between mt-3"> <span>$38,000</span> <button class="btn btn-sm btn-outline-dark">Apply Now</button> </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card p-2">
+                <div class="text-right"> <small>Full Time</small> </div>
+                <div class="text-center mt-2 p-3"> <img src="https://img.icons8.com/officel/80/000000/dribbble.png" width="60" /> <span class="d-block font-weight-bold">UX Designer</span>
+                    <hr> <span>Dribbble Inc</span>
+                    <div class="d-flex flex-row align-items-center justify-content-center"> <i class="fa fa-map-marker"></i> <small class="ml-1">FA 280, OH, USA</small> </div>
+                    <div class="d-flex justify-content-between mt-3"> <span>Fee: $24,000</span> <button class="btn btn-sm btn-outline-dark">Apply Now</button> </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card p-2">
+                <div class="text-right"> <small>Full Time</small> </div>
+                <div class="text-center mt-2 p-3"> <img src="https://img.icons8.com/color/96/000000/behance.png" width="60" /> <span class="d-block font-weight-bold">UX Designer</span>
+                    <hr> <span>Behance Inc</span>
+                    <div class="d-flex flex-row align-items-center justify-content-center"> <i class="fa fa-map-marker"></i> <small class="ml-1">FA 130, OH, USA</small> </div>
+                    <div class="d-flex justify-content-between mt-3"> <span>Fee: $30,000</span> <button class="btn btn-sm btn-outline-dark">Apply Now</button> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="training">
+<div class="container mt-5">
+    <div class="d-flex justify-content-between">
+        <h4>Recommended Professional Training/Courses</h4> <button class="btn btn-sm btn-outline-dark">Apply all</button>
+    </div>
+    <div class="row mt-2 g-1">
+        <div class="col-md-3">
+            <div class="card p-2">
+                <div class="text-right"> <small>Full Time</small> </div>
+                <div class="text-center mt-2 p-3"> <img src="https://img.icons8.com/color/96/000000/google-logo.png" width="60" /> <span class="d-block font-weight-bold">UX Designer</span>
+                    <hr> <span>Google Inc</span>
+                    <div class="d-flex flex-row align-items-center justify-content-center"> <i class="fa fa-map-marker"></i> <small class="ml-1">FA 100, OH, USA</small> </div>
+                    <div class="d-flex justify-content-between mt-3"> <span>Cost: $34,000</span> <button class="btn btn-sm btn-outline-dark">Apply Now</button> </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card p-2">
+                <div class="text-right"> <small>Full Time</small> </div>
+                <div class="text-center mt-2 p-3"> <img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" width="60" /> <span class="d-block font-weight-bold">UX Designer</span>
+                    <hr> <span>Instagram Inc</span>
+                    <div class="d-flex flex-row align-items-center justify-content-center"> <i class="fa fa-map-marker"></i> <small class="ml-1">FA 104, OH, USA</small> </div>
+                    <div class="d-flex justify-content-between mt-3"> <span>Cost: $38,000</span> <button class="btn btn-sm btn-outline-dark">Apply Now</button> </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card p-2">
+                <div class="text-right"> <small>Full Time</small> </div>
+                <div class="text-center mt-2 p-3"> <img src="https://img.icons8.com/officel/80/000000/dribbble.png" width="60" /> <span class="d-block font-weight-bold">UX Designer</span>
+                    <hr> <span>Dribbble Inc</span>
+                    <div class="d-flex flex-row align-items-center justify-content-center"> <i class="fa fa-map-marker"></i> <small class="ml-1">FA 280, OH, USA</small> </div>
+                    <div class="d-flex justify-content-between mt-3"> <span>Cost: $24,000</span> <button class="btn btn-sm btn-outline-dark">Apply Now</button> </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card p-2">
+                <div class="text-right"> <small>Full Time</small> </div>
+                <div class="text-center mt-2 p-3"> <img src="https://img.icons8.com/color/96/000000/behance.png" width="60" /> <span class="d-block font-weight-bold">UX Designer</span>
+                    <hr> <span>Behance Inc</span>
+                    <div class="d-flex flex-row align-items-center justify-content-center"> <i class="fa fa-map-marker"></i> <small class="ml-1">FA 130, OH, USA</small> </div>
+                    <div class="d-flex justify-content-between mt-3"> <span>Cost: $30,000</span> <button class="btn btn-sm btn-outline-dark">Apply Now</button> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container mt-5">
+    <div class="d-flex justify-content-between">
+        <h4>Recommended Training</h4> <button class="btn btn-sm btn-outline-dark">Apply all</button>
+    </div>
+    <div class="row mt-2 g-1">
+        <div class="col-md-3">
+            <div class="card p-2">
+                <div class="text-right"> <small>Full Time</small> </div>
+                <div class="text-center mt-2 p-3"> <img src="https://img.icons8.com/color/96/000000/google-logo.png" width="60" /> <span class="d-block font-weight-bold">UX Designer</span>
+                    <hr> <span>Google Inc</span>
+                    <div class="d-flex flex-row align-items-center justify-content-center"> <i class="fa fa-map-marker"></i> <small class="ml-1">FA 100, OH, USA</small> </div>
+                    <div class="d-flex justify-content-between mt-3"> <span>Cost: $34,000</span> <button class="btn btn-sm btn-outline-dark">Apply Now</button> </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card p-2">
+                <div class="text-right"> <small>Full Time</small> </div>
+                <div class="text-center mt-2 p-3"> <img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" width="60" /> <span class="d-block font-weight-bold">UX Designer</span>
+                    <hr> <span>Instagram Inc</span>
+                    <div class="d-flex flex-row align-items-center justify-content-center"> <i class="fa fa-map-marker"></i> <small class="ml-1">FA 104, OH, USA</small> </div>
+                    <div class="d-flex justify-content-between mt-3"> <span>Cost: $38,000</span> <button class="btn btn-sm btn-outline-dark">Apply Now</button> </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card p-2">
+                <div class="text-right"> <small>Full Time</small> </div>
+                <div class="text-center mt-2 p-3"> <img src="https://img.icons8.com/officel/80/000000/dribbble.png" width="60" /> <span class="d-block font-weight-bold">UX Designer</span>
+                    <hr> <span>Dribbble Inc</span>
+                    <div class="d-flex flex-row align-items-center justify-content-center"> <i class="fa fa-map-marker"></i> <small class="ml-1">FA 280, OH, USA</small> </div>
+                    <div class="d-flex justify-content-between mt-3"> <span>Cost: $24,000</span> <button class="btn btn-sm btn-outline-dark">Apply Now</button> </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card p-2">
+                <div class="text-right"> <small>Full Time</small> </div>
+                <div class="text-center mt-2 p-3"> <img src="https://img.icons8.com/color/96/000000/behance.png" width="60" /> <span class="d-block font-weight-bold">UX Designer</span>
+                    <hr> <span>Behance Inc</span>
+                    <div class="d-flex flex-row align-items-center justify-content-center"> <i class="fa fa-map-marker"></i> <small class="ml-1">FA 130, OH, USA</small> </div>
+                    <div class="d-flex justify-content-between mt-3"> <span>Cost: $30,000</span> <button class="btn btn-sm btn-outline-dark">Apply Now</button> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container mt-5">
+    <div class="d-flex justify-content-between">
+        <h4>Recommended Training</h4> <button class="btn btn-sm btn-outline-dark">Apply all</button>
+    </div>
+    <div class="row mt-2 g-1">
+        <div class="col-md-3">
+            <div class="card p-2">
+                <div class="text-right"> <small>Full Time</small> </div>
+                <div class="text-center mt-2 p-3"> <img src="https://img.icons8.com/color/96/000000/google-logo.png" width="60" /> <span class="d-block font-weight-bold">UX Designer</span>
+                    <hr> <span>Google Inc</span>
+                    <div class="d-flex flex-row align-items-center justify-content-center"> <i class="fa fa-map-marker"></i> <small class="ml-1">FA 100, OH, USA</small> </div>
+                    <div class="d-flex justify-content-between mt-3"> <span>Cost: $34,000</span> <button class="btn btn-sm btn-outline-dark">Apply Now</button> </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card p-2">
+                <div class="text-right"> <small>Full Time</small> </div>
+                <div class="text-center mt-2 p-3"> <img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" width="60" /> <span class="d-block font-weight-bold">UX Designer</span>
+                    <hr> <span>Instagram Inc</span>
+                    <div class="d-flex flex-row align-items-center justify-content-center"> <i class="fa fa-map-marker"></i> <small class="ml-1">FA 104, OH, USA</small> </div>
+                    <div class="d-flex justify-content-between mt-3"> <span>Cost: $38,000</span> <button class="btn btn-sm btn-outline-dark">Apply Now</button> </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card p-2">
+                <div class="text-right"> <small>Full Time</small> </div>
+                <div class="text-center mt-2 p-3"> <img src="https://img.icons8.com/officel/80/000000/dribbble.png" width="60" /> <span class="d-block font-weight-bold">UX Designer</span>
+                    <hr> <span>Dribbble Inc</span>
+                    <div class="d-flex flex-row align-items-center justify-content-center"> <i class="fa fa-map-marker"></i> <small class="ml-1">FA 280, OH, USA</small> </div>
+                    <div class="d-flex justify-content-between mt-3"> <span>Cost: $24,000</span> <button class="btn btn-sm btn-outline-dark">Apply Now</button> </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card p-2">
+                <div class="text-right"> <small>Full Time</small> </div>
+                <div class="text-center mt-2 p-3"> <img src="https://img.icons8.com/color/96/000000/behance.png" width="60" /> <span class="d-block font-weight-bold">UX Designer</span>
+                    <hr> <span>Behance Inc</span>
+                    <div class="d-flex flex-row align-items-center justify-content-center"> <i class="fa fa-map-marker"></i> <small class="ml-1">FA 130, OH, USA</small> </div>
+                    <div class="d-flex justify-content-between mt-3"> <span>Cost: $30,000</span> <button class="btn btn-sm btn-outline-dark">Apply Now</button> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+
+<br><br>
+<section class="blog-Block-Cards">
+    <br><br>
+    <div style="text-align:center;">OUR TEAM, VISION & TARGETS</div>
+    <br><br>
+<div class="row">
+
+    <div class="col-sm-4 mb-3 mb-sm-0">
+      <div class="card" style="min-height:60%">
+        <div class="card-body">
+            <img src="oc-S-Shortage.jpeg" class="object-fit-md-contain border rounded" style="height:570px; max-width: 100%" alt="Overcoming Skill Shortages"><br><br>
+          <h5 class="card-title">Overcome skill shortages</h5>
+          <p class="card-text"><span>Our team is equipped with the latest marketing tactics. See your recruitment performance improve over time, as we use performance data to optimise your ads for the best return on your investment.</span></p><br><br>
+          <a href="#" class="btn btn-primary">Booking</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card" style="min-height:70%;">
+        <div class="card-body">
+            <img src="disabled-at-work.jpeg" class="object-fit-md-contain border rounded" style="height:570px; max-width: 100%" alt="Reporting & Strategizing"><br><br>
+          <h5 class="card-title">Regular reporting and strategy meetings</h5>
+          <p class="card-text"><span>We'll produce monthly performance reports, and make recommendations to drive performance for both our Recruitment & Applicant Clients.</span></p><br><br>
+          <a href="#" class="btn btn-primary">Booking</a>
+        </div>
+      </div>
+    </div>
+  <div class="col-sm-4">
+    <div class="card" style="max-height:100%">
+      <div class="card-body">
+        <img src="c-Management.jpeg" class="object-fit-md-contain border rounded;" alt="Candidate Management"><br><br>
+        <h5 class="card-title">Candidate Management</h5>
+        <p class="card-text"><span>We can help with candidate management at every stage in the recruitment process, from initial shortlisting, to offer/regret management.</span></p><br><br>
+        <a href="#" class="btn btn-primary">Booking</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+</section>
+
+<div class="container" style="display: flex; justify-content: left; margin: 50px;">
+    <video width="800" height="500" controls>
+        <source src="https://youtu.be/DHDrj0_bMQ0" class="object-fit-contain" type="video/mp4" autoplay>Your browser does not support the video tag.
+    </video>
+    <video width="800" height="500" controls>
+        <source src="https://youtu.be/DHDrj0_bMQ0" class="object-fit-contain" type="video/mp4" autoplay>Your browser does not support the video tag.
+    </video>
+    <video width="800" height="500" controls>
+        <source src="https://youtu.be/DHDrj0_bMQ0" class="object-fit-contain" type="video/mp4" autoplay>Your browser does not support the video tag.
+    </video>
+</div>
+
+FB
+<a href="#"></a>
+Tweeter
+<a href="#"></a>
+G-Mail
+<a href="#"></a>
+LinkedIn
+<a href="#"></a> <i class="fa fa-linkedIn" aria-hidden="true"></i>
+Instagram
+<a href="#"></a> <i class="fa fa-instagram" aria-hidden="true"></i>
+
+
+© 2023 Copyright: CAMERJobs.com
+
+<!-- Footer -->
+<footer class="bg-body-tertiary text-center">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+      <!-- Github -->
+      <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+              <input type="email" id="form5Example24" class="form-control" />
+              <label class="form-label" for="form5Example24">Email address</label>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button data-mdb-ripple-init type="submit" class="btn btn-outline mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+        repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam eum
+        harum corrupti dicta, aliquam sequi voluptate quas.
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a class="text-body" href="#!">Link 1</a>
+            </li>
+            <li>
+              <a class="text-body" href="#!">Link 2</a>
+            </li>
+            <li>
+              <a class="text-body" href="#!">Link 3</a>
+            </li>
+            <li>
+              <a class="text-body" href="#!">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a class="text-body" href="#!">Link 1</a>
+            </li>
+            <li>
+              <a class="text-body" href="#!">Link 2</a>
+            </li>
+            <li>
+              <a class="text-body" href="#!">Link 3</a>
+            </li>
+            <li>
+              <a class="text-body" href="#!">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a class="text-body" href="#!">Link 1</a>
+            </li>
+            <li>
+              <a class="text-body" href="#!">Link 2</a>
+            </li>
+            <li>
+              <a class="text-body" href="#!">Link 3</a>
+            </li>
+            <li>
+              <a class="text-body" href="#!">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a class="text-body" href="#!">Link 1</a>
+            </li>
+            <li>
+              <a class="text-body" href="#!">Link 2</a>
+            </li>
+            <li>
+              <a class="text-body" href="#!">Link 3</a>
+            </li>
+            <li>
+              <a class="text-body" href="#!">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2023 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">CAMERJobs.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="liveChat.js"></script>
+<script>
+    var darkmode = false;
+    $(document).ready(function(){
+    $(".darkBg").click(function(){
+        var str = "black";
+        var text = "Light Mode";
+        if (darkmode){
+            str = "white";
+            text= "Dark Mode"
+        }
+        darkmode = !darkmode;
+        $(document.body).css("background-color", str);
+        $(this).html(text)
+    })
+   
+})
+
+
+</script>
+</html>

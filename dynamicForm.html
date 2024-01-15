@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="jobsGallery.css">
+    <link rel="stylesheet" href="jobVacs.css">
+</head>
+
+<body>
+    <br>
+    <div class="loginPage"><a href="PopularForm.html"><p  style="color: white;">Login / SignUp</p></a></div>
+    <br>
+
+
+<!--<section class="adjustCards">   
+    <div class="gallery">
+        <div class="resizer">RESIZE SCREEN</div>
+        <div class="items">
+          <div class="item" class=""></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+        </div>
+        <div class="pagination"></div>
+      </div>
+</section>-->
+
+<!--<section class="jobsAdsFilter">
+   <div class="main">
+    <div class="base">
+        <h1 style="font-size: 40px;">Filter </h1>
+        
+        <label for="search">SEARCH BY KEYBOARD</label><br>
+        <input class="int1" type="text" id="search" placeholder="Search Jobs">
+        <br>
+        <br>
+        <h3>VIEW</h3>
+
+      <div class="allcheckbox">
+        <input type="checkbox" name="alljob" id="All Job Posts" >
+        <label for="All Job Posts">All Jobs Posts</label>
+        <br>
+        <br>
+       
+        <input type="checkbox" name="alljob" id="Active Job Posts">
+        <label for="Active Job Posts">Active JOb Posts</label>
+        <br>
+        <br>
+        
+        <input type="checkbox" name="alljob" id="Achieved Job Posts" checked="checked">
+        <label for="Achived Job Posts ">Achieved Job Posts</label>
+        
+      </div>
+        <br>
+        <br>
+        <h3>INCLUDE</h3>
+        <input type="checkbox" name="jobs shared" id="Job Shared">
+        <label for="Job Shared">Jobs shared with me</label>
+        <br>
+        <br>
+        <button class="button">Save Changes </button>
+
+    </div>
+   </div>
+</section>-->
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="jobsGallery.js"></script>
+<script src="jobVacs.js"></script>
+<script>
+    var elm;
+    $(document).ready(function(){
+        $('#countryId').on('change',function(){
+            var val=$(this).val();
+            if(val=='others'){
+                $('#divcountryid').removeClass("d-none");
+            }
+            else{
+                $('#divcountryid').addClass("d-none");
+            }
+        });
+
+        $('input').on('mouseenter', function(){
+            $(this).attr("style","border-color:red")
+        });
+        $('input').on('mouseleave', function(){
+            $(this).attr("style","border-color:none")
+        });
+
+
+        $('.cloneeducation').on('click',function(){
+           cloneducation($(this));
+           
+        });
+
+        $('.deleteeducation').on('click', function(){
+            $($(this).parents('.education')).remove();
+            refreshDeleteBtn();
+        });
+      
+
+        function cloneducation(education){
+            var edx=$(education.parents('div.education'));
+            edx.after(edx.clone());
+            
+            $('.cloneeducation').off('click');
+            $('.cloneeducation').on('click',function(){cloneducation(education);});
+
+            $('.deleteeducation').off('click');
+            $('.deleteeducation').on('click',function(){ 
+                $($(this).parents('.education')).remove();
+                refreshDeleteBtn();
+            });
+            refreshDeleteBtn();
+                
+        }
+
+        function refreshDeleteBtn(){
+              //remove d-none from every delete btn in education 
+              debugger;
+              for (const iterator of $('.education')) {
+                console.log($($(iterator).find('.deleteeducation')));
+                const btn=$(iterator).find('button.deleteeducation');
+                $(btn).removeClass('d-none');
+            }
+
+            //adding d-none in only the first education item so that we dont accidentally delete the item
+            const firstEducation=$('.education')[0];
+            const firstEducationDeleteBtn=$(firstEducation).find('.deleteeducation');
+            $(firstEducationDeleteBtn).addClass('d-none');
+        }
+    });
+</script>
